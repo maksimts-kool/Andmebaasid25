@@ -9,3 +9,9 @@ Scalar valued only - fn_GetEmployeeNameById
 <img width="315" height="294" alt="{C591F439-09D5-435F-B126-A4127AF1C39B}" src="https://github.com/user-attachments/assets/280d2471-1480-4952-b5d5-cd6556646cbc" />
 
 vWEmployeeByDepartment, vWCorporateDepartment_Employees, vWEmployeesNonConfData, vWEmployeesCountByDepartment, vWEmployeesDataExSalary, vWEmployeeDetailsByDept
+
+## Index
+
+<img width="625" height="141" alt="{E4CC5139-4450-4E19-9F7C-8555E04B83F3}" src="https://github.com/user-attachments/assets/b21bee90-e272-441f-a620-dfcbb5633e49" />
+
+Kasutatud - EXEC sp_helpindex 'DimEmployee'
