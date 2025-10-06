@@ -1,11 +1,11 @@
 ## Triggers, Procedures, Functions (Table valued and Scalar valued)
 
-<img width="275" height="367" alt="{5F6C0F69-121F-41C6-AEA1-984478555782}" src="https://github.com/user-attachments/assets/e78b7545-2058-43c3-ae89-1ae9d7b20edf" />
+<img width="306" height="469" alt="{ADD79DB3-663B-4E49-8F20-025DD0EF8620}" src="https://github.com/user-attachments/assets/fcd91996-e95d-4a22-a0f6-6a903e1f057c" />
 
 Scalar valued only - fn_GetEmployeeNameById
 
 ## Views
 
-<img width="295" height="244" alt="{2724AFCE-B086-4FD6-8335-F2870B7168C6}" src="https://github.com/user-attachments/assets/e1c02d7d-69a2-46df-8bc9-e4b6b0a016ca" />
+<img width="315" height="294" alt="{C591F439-09D5-435F-B126-A4127AF1C39B}" src="https://github.com/user-attachments/assets/280d2471-1480-4952-b5d5-cd6556646cbc" />
 
 vWEmployeeByDepartment, vWCorporateDepartment_Employees, vWEmployeesNonConfData, vWEmployeesCountByDepartment, vWEmployeesDataExSalary, vWEmployeeDetailsByDept
