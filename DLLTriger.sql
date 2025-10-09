@@ -30,3 +30,13 @@ BEGIN
 PRINT 'A table just been created, modified or deleted'
 END
 -- Kui nüüd lood, muudad ja kustutad tabeli, siis trigger käivitub automaatselt ja saad sõnumi: A table has just been created, modified or deleted.  
+
+-- Nüüd vaatame nõidet, kuidas ära hoida kasutajatel loomaks, muutmaks või kustatamiseks tabelit. 
+ALTER TRIGGER FirstTrigger 
+ON Database
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+ROLLBACK
+PRINT 'You cannot create, modify, alter or drop a table'
+END
