@@ -60,3 +60,16 @@ END
 sp_rename 'TestTable', 'NewTestTable' 
 -- JÄrgnev kood muudab Id veergu NewTestTabel tabelis NewId peale
 sp_rename 'NewTestTable.Id' , 'NewId', 'column'
+
+
+
+-- Server-Scoped DDL triggerid
+-- Käsitletav trigger on andmebaasi vahemikus olev trigger. See ei luba luua, muuta ja kustutada tabeleid andmebaasist sinna, kuhu see on loodud
+CREATE TRIGGER tr_DatabaseScopeTrigger 
+ON Database
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+ROLLBACK
+PRINT 'You cannot create, modify, alter or drop a table in the current database'
+END
