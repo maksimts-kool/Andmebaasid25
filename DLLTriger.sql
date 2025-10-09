@@ -40,3 +40,8 @@ BEGIN
 ROLLBACK
 PRINT 'You cannot create, modify, alter or drop a table'
 END
+
+-- Kui lubada triggerit
+DISABLE TRIGGER FirstTrigger ON DATABASE
+-- Kuidas kustutada triggerit
+DROP TRIGGER FirstTrigger ON DATABASE
