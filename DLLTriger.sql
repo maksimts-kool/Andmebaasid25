@@ -83,3 +83,10 @@ BEGIN
 ROLLBACK
 PRINT 'You cannot create, modify, alter or drop a table in the current database'
 END
+
+-- Kuidas saab Serveri ulatuses olevat DDL trigerit kinni panna
+DISABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+-- Kuidas lubada Serveri ulatuses olevat DDL trigerit
+ENABLE TRIGGER tr_ServerScopeTrigger ON ALL SERVER
+-- Kuidas kustutada serveri ulatuses olevat DDL trigerit
+DROP TRIGGER tr_ServerScopeTrigger ON ALL SERVER
