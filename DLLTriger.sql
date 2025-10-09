@@ -73,3 +73,13 @@ BEGIN
 ROLLBACK
 PRINT 'You cannot create, modify, alter or drop a table in the current database'
 END
+
+-- Loo Serveri-vahemikus olev DDL trigger: See on nagu andembaasi vahemiku trigger, aga erinevus seisneb, et sa pead lisama koodis sõna ALL peale
+CREATE TRIGGER tr_ServerScopeTrigger
+ON ALL SERVER
+FOR CREATE_TABLE, ALTER_TABLE, DROP_TABLE
+AS
+BEGIN
+ROLLBACK
+PRINT 'You cannot create, modify, alter or drop a table in the current database'
+END
