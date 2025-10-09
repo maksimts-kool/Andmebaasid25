@@ -45,3 +45,18 @@ END
 DISABLE TRIGGER FirstTrigger ON DATABASE
 -- Kuidas kustutada triggerit
 DROP TRIGGER FirstTrigger ON DATABASE
+
+-- Järgnev trigger käivitub, kui peaksid kasutama sp_rename käsklust süsteemi stored procedurite muutmisel.
+CREATE TRIGGER RenameTable 
+ON Database
+FOR RENAME
+AS
+BEGIN
+ROLLBACK
+PRINT 'You just renamed something'
+END
+
+-- JÄrgnev kood muudab TestTable nime NewTestTable nimeks
+sp_rename 'TestTable', 'NewTestTable' 
+-- JÄrgnev kood muudab Id veergu NewTestTabel tabelis NewId peale
+sp_rename 'NewTestTable.Id' , 'NewId', 'column'
